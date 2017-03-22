@@ -16,7 +16,7 @@ The functions provided by this package use data from the [US National Highway Tr
 
 Currently, this package exists in a development version on GitHub. To use the package, you need to install it directly from GitHub using the `install_github` function from `devtools`. 
 
-You can use the following code to install the development version of `countyweather`: 
+You can use the following code to install the development version of `farsfuncs`: 
 
 ```{r eval = TRUE}
 library(devtools)
