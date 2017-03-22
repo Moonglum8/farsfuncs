@@ -13,7 +13,7 @@ Currently, this package exists in a development version on GitHub. To use the pa
 
 You can use the following code to install the development version of `farsfuncs`: 
 
-```{r eval = TRUE}
+```{r eval = FALSE}
 library(devtools)
 install_github("moonglum8/farsfuncs")
 library(farsfuncs)
@@ -22,7 +22,7 @@ library(farsfuncs)
 
 Users may access some sample data by running the following codes.
 
-```{r eval = TRUE, messages=FALSE}
+```{r eval = FALSE, messages=FALSE}
 f13path<-system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 f14path<-system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
 f15path<-system.file("extdata", "accident_2015.csv.bz2", package = "farsfuncs")
@@ -40,7 +40,7 @@ The `fars_summarize_years` function summarises by month and year the total numbe
 
 Enter years as a vector or integer years in YYYY format (eg 2013).
 
-```{r eval = TRUE}
+```{r eval = FALSE}
 library(dplyr)
 library(readr)
 library(tidyr)
@@ -52,7 +52,7 @@ The `fars_map_state` function generates of map of the location of accidents with
 
 Enter the State number (eg 1) and the year to be analysed in YYYY format eg 2011.
 
-```{r eval = TRUE}
+```{r eval = FALSE}
 library(dplyr)
 library(readr)
 library(tidyr)
