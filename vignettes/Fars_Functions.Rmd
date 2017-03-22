@@ -23,12 +23,6 @@ library(devtools)
 install_github("moonglum8/farsfuncs")
 library(farsfuncs)
 ```
-## farsfuncs
-
-The user has access to two functions to help summarise and visualise the data. These are the `fars_summarize_years` and `fars_map_state` functions.
-
-Use of these functions are shown below.
-
 ## Sample data included with package
 
 Users may access some sample data by running the following codes.
@@ -39,7 +33,13 @@ system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
 system.file("extdata", "accident_2015.csv.bz2", package = "farsfuncs")
 ```
 
-# fars_summarize_years
+## farsfuncs
+
+The user has access to two functions to help summarise and visualise the data. These are the `fars_summarize_years` and `fars_map_state` functions.
+
+Use of these functions are shown below.
+
+### fars_summarize_years
 
 The `fars_summarize_years` function summarises by month and year the total number of accidents.
 
@@ -51,7 +51,7 @@ library(readr)
 library(tidyr)
 fars_summarize_years(c(2013,2014,2015))
 ```
-# fars_map_state
+### fars_map_state
 
 The `fars_map_state` function generates of map of the location of accidents within the specified US state during the specified year.
 
