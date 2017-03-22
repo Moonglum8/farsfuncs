@@ -13,7 +13,7 @@ Currently, this package exists in a development version on GitHub. To use the pa
 
 You can use the following code to install the development version of `countyweather`: 
 
-```{r eval = FALSE}
+```{r eval = TRUE}
 library(devtools)
 install_github("moonglum8/farsfuncs")
 library(farsfuncs)
