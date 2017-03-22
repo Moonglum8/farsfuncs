@@ -14,6 +14,8 @@
 #'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
+#'
+#' @export
 fars_read <- function(filename) {
         if(!file.exists(filename))
                 stop("file '", filename, "' does not exist")
@@ -33,6 +35,8 @@ fars_read <- function(filename) {
 #'
 #' @examples
 #' make_filename(2017)
+#'
+#' @export
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -56,6 +60,8 @@ make_filename <- function(year) {
 #' fars_read_years()
 #' fars_read_years(2017)
 #' fars_read_years(c(2013,2014,2015))
+#'
+#' @export
 fars_read_years <- function(years) {
         lapply(years, function(year) {
                 file <- make_filename(year)
