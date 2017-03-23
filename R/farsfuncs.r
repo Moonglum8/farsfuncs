@@ -29,7 +29,7 @@ fars_read <- function(filename) {
 #'
 #' Simple function to generate a character string that is in the standard form for a fars data file.
 #'
-#' @inheritParams fars_read_years
+#' @param year integer
 #'
 #' @return String that represents a fars file name for a given year.
 #'
@@ -47,7 +47,7 @@ make_filename <- function(year) {
 #' Function to generate a table of months available for a list of years.
 #'
 #' @details Will produce errors if data file for a particular year is not available.
-#' 
+#'
 #' @inheritParams fars_summarize_years
 #'
 #' @return A list of Months and Years.
@@ -67,7 +67,7 @@ fars_read_years <- function(years) {
                 file <- make_filename(year)
                 tryCatch({
                         dat <- fars_read(file)
-                        dplyr::mutate(dat, year = year) %>% 
+                        dplyr::mutate(dat, year = year) %>%
                                 dplyr::select(MONTH, year)
                 }, error = function(e) {
                         warning("invalid year: ", year)
@@ -98,8 +98,8 @@ fars_read_years <- function(years) {
 #' @export
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
-        dplyr::bind_rows(dat_list) %>% 
-                dplyr::group_by(year, MONTH) %>% 
+        dplyr::bind_rows(dat_list) %>%
+                dplyr::group_by(year, MONTH) %>%
                 dplyr::summarize(n = n()) %>%
                 tidyr::spread(year, n)
 }
