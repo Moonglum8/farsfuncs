@@ -16,8 +16,10 @@ A table showing total number of accident by month and year.
 Function to generate a table showing numbers of accidents for a list of years from fars data.
 }
 \examples{
-fars_summarize_years()
-fars_summarize_years(2017)
+f13path <- system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
+f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
+f15path <- system.file("extdata", "accident_2015.csv.bz2", package = "farsfuncs")
+file.copy(from=c(f13path,f14path,f15path),to=getwd())
 fars_summarize_years(c(2013,2014,2015))
 
 }

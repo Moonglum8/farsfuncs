@@ -19,6 +19,10 @@ Function to generate a table of months available for a list of years.
 Will produce errors if data file for a particular year is not available.
 }
 \examples{
+f13path <- system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
+f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
+f15path <- system.file("extdata", "accident_2015.csv.bz2", package = "farsfuncs")
+file.copy(from=c(f13path,f14path,f15path),to=getwd())
 fars_read_years(c(2013,2014,2015))
 
 }

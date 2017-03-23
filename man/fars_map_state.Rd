@@ -22,6 +22,8 @@ accidents (using the graphics package) for a given state and year.
 Will generate error if an invalid state number is input.
 }
 \examples{
+f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
+file.copy(from=c(f14path),to=getwd())
 fars_map_state(1,2014)
 
 }
