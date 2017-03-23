@@ -9,6 +9,9 @@
 #' @return This function returns a table data frame.
 #'
 #' @examples
+#' library(dplyr)
+#' library(readr)
+#' library(tidyr)
 #' f13path<-system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 #' file.copy(from=c(f13path,f14path,f15path),to=getwd())
 #' fars_read("accident_2013.csz.bz2")
@@ -58,6 +61,9 @@ make_filename <- function(year) {
 #' @importFrom dplyr %>%
 #'
 #' @examples
+#' library(dplyr)
+#' library(readr)
+#' library(tidyr)
 #' f13path <- system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 #' f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
 #' f15path <- system.file("extdata", "accident_2015.csv.bz2", package = "farsfuncs")
@@ -88,6 +94,9 @@ fars_read_years <- function(years) {
 #' @return A table showing total number of accident by month and year.
 #'
 #' @examples
+#' library(dplyr)
+#' library(readr)
+#' library(tidyr)
 #' f13path <- system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 #' f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
 #' f15path <- system.file("extdata", "accident_2015.csv.bz2", package = "farsfuncs")
@@ -122,6 +131,11 @@ fars_summarize_years <- function(years) {
 #' @return This function returns a graphical object.
 #'
 #' @examples
+#' library(dplyr)
+#' library(readr)
+#' library(tidyr)
+#' library(maps)
+#' library(graphics)
 #' f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
 #' file.copy(from=c(f14path),to=getwd())
 #' fars_map_state(1,2014)

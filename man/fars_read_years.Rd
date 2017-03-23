@@ -19,6 +19,9 @@ Function to generate a table of months available for a list of years.
 Will produce errors if data file for a particular year is not available.
 }
 \examples{
+library(dplyr)
+library(readr)
+library(tidyr)
 f13path <- system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "farsfuncs")
 f15path <- system.file("extdata", "accident_2015.csv.bz2", package = "farsfuncs")
