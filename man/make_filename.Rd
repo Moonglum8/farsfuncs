@@ -6,6 +6,9 @@
 \usage{
 make_filename(year)
 }
+\arguments{
+\item{year}{integer}
+}
 \value{
 String that represents a fars file name for a given year.
 }
