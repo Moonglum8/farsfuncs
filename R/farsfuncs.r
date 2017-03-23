@@ -9,7 +9,6 @@
 #' @return This function returns a table data frame.
 #'
 #' @examples
-#' fars_read()
 #' fars_read("accident_2013.csz.bz2")
 #'
 #' @importFrom readr read_csv
@@ -57,8 +56,6 @@ make_filename <- function(year) {
 #' @importFrom dplyr %>%
 #'
 #' @examples
-#' fars_read_years()
-#' fars_read_years(2017)
 #' fars_read_years(c(2013,2014,2015))
 #'
 #' @export
@@ -117,8 +114,6 @@ fars_summarize_years <- function(years) {
 #' @return This function returns a graphical object.
 #'
 #' @examples
-#' fars_map_state()
-#' fars_map_state(100,2014)
 #' fars_map_state(1,2014)
 #'
 #' @importFrom dplyr filter

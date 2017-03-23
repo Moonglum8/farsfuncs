@@ -19,7 +19,6 @@ This is a simple function that reads a csv data file into R.
 If the file does not exist it will generate an error message.
 }
 \examples{
-fars_read()
 fars_read("accident_2013.csz.bz2")
 
 }

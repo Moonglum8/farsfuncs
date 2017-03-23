@@ -19,8 +19,6 @@ Function to generate a table of months available for a list of years.
 Will produce errors if data file for a particular year is not available.
 }
 \examples{
-fars_read_years()
-fars_read_years(2017)
 fars_read_years(c(2013,2014,2015))
 
 }

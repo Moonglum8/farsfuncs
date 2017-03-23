@@ -22,8 +22,6 @@ accidents (using the graphics package) for a given state and year.
 Will generate error if an invalid state number is input.
 }
 \examples{
-fars_map_state()
-fars_map_state(100,2014)
 fars_map_state(1,2014)
 
 }
