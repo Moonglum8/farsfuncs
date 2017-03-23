@@ -1,10 +1,10 @@
 ---
-title: "Fars Functions vignette"
+title: "Fars Functions package"
 author: "Michael T"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Details for fursfuncs package}
+  %\VignetteIndexEntry{Fars Functions package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
