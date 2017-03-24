@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Moonglum8/farsfuncs.svg?branch=master)](https://travis-ci.org/Moonglum8/farsfuncs)
+
 The functions provided by this package use data from the [US National Highway Traffic Safety Administration's](https://www.nhtsa.gov/) [Fatality Analysis Reporting System](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars). This is a US nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
 
 
