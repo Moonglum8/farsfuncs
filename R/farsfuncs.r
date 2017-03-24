@@ -14,7 +14,7 @@
 #' library(tidyr)
 #' f13path<-system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 #' file.copy(from=c(f13path),to=getwd())
-#' fars_read("accident_2013.csz.bz2")
+#' fars_read("accident_2013.csv.bz2")
 #'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
